@@ -98,6 +98,34 @@ leerstof met oefentoetsen, geslaagd alleen met 0 fouten. Later te delen met coll
 
 ---
 
+## Fase 6: Oefenen in 3D
+
+*Gamification uitbreiden met oefeningen in een 3D-wereld, gewoon in de browser op de telefoon.
+Pas starten als fase 1 klaar is: eerst betrouwbare leerstof, dan pas een mooie wereld.*
+
+- [ ] **Stap 1: Foutenjacht met eigen foto's (2D)**
+  - [ ] **Zoon**: foto's maken op de bouw van liften met (en zonder) gebreken
+  - [ ] **Zoon**: lijst van fouten die hij op de bouw het vaakst ziet
+  - [ ] **Claude**: oefenvorm bouwen: gebreken aantikken op de foto, geslaagd als je ze **allemaal** vindt
+  - [ ] Testen: slaat deze oefenvorm aan?
+- [ ] **Stap 2: Eenvoudige 3D-foutenjacht**
+  - [ ] Blokkenmodel van een bouwlift (mast, ankers, onderframe, bodemafscherming, lift)
+  - [ ] Draaien en inzoomen, gebreken aantikken (bijv. ontbrekend anker, open deur, te veel vrije mast)
+- [ ] **Stap 3: Montage-simulator en ankerplan in 3D**
+  - [ ] Lift stap voor stap opbouwen in de juiste volgorde
+  - [ ] Ankers zelf plaatsen op een gebouw, de app controleert met de handleidingwaarden
+- [ ] **Stap 4: AR (augmented reality)**
+  - [ ] Bouwlift op ware grootte via de camera van de telefoon in de echte omgeving
+
+**Aandachtspunten**
+- Het 3D-model is het meeste werk. Een blokkenmodel kan Claude maken, een realistisch model moet getekend of gekocht worden.
+- Geen 3D-modellen of afbeeldingen van fabrikanten gebruiken zonder toestemming.
+- Eenvoudig houden zodat het vlot werkt op een telefoon.
+
+**Klaar als**: je zoon kan in 3D oefenen met gebreken zoeken en een lift opbouwen.
+
+---
+
 ## Ideeën (nog niet ingepland)
 
 *Zet hier alles neer wat opkomt. We plannen het in als het past.*
