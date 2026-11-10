@@ -85,3 +85,31 @@ td, th { padding: 6px 4px; border-bottom: 1px solid var(--rand); text-align: lef
 .begrippen dt { font-weight: 700; margin-top: 12px; }
 .begrippen dd { margin: 4px 0 0 0; }
 .mast { display: flex; flex-direction: column-reverse; gap: 0; margin: 12px 0; }
+.badge.open { background: var(--rand); color: var(--tekst); }
+.balk { height: 8px; background: var(--rand); border-radius: 99px; margin: 8px 0; overflow: hidden; }
+.balk > div { height: 100%; background: var(--geel); }
+.module {
+  display: flex; flex-direction: column; gap: 4px; width: 100%; text-align: left;
+  padding: 14px; margin: 8px 0; background: var(--kaart); color: var(--tekst);
+  border: 1px solid var(--rand); border-radius: 12px; cursor: pointer;
+}
+.terug { background: none; border: 0; color: var(--muted); padding: 4px 0; cursor: pointer; }
+.kaart h3 { margin: 0 0 4px; font-size: 1rem; }
+.kaart p { margin: 4px 0; }
+.knoppen { display: flex; gap: 8px; margin: 16px 0 8px; }
+.knoppen button { flex: 1; }
+.primair {
+  padding: 12px 14px; border: 0; border-radius: 8px; background: var(--geel);
+  color: #1d1d1b; font-weight: 700; cursor: pointer; width: 100%; margin-top: 12px;
+}
+.knoppen .primair, .knoppen .secundair { margin-top: 0; }
+.primair[disabled] { opacity: .4; cursor: default; }
+.vraag { font-size: 1.15rem; margin: 16px 0 12px; }
+.opties { display: flex; flex-direction: column; gap: 8px; }
+.optie {
+  text-align: left; padding: 14px; border: 2px solid var(--rand); border-radius: 10px;
+  background: var(--kaart); color: var(--tekst); cursor: pointer;
+}
+.optie.gekozen { border-color: var(--geel); }
+.optie.juist { border-color: var(--groen); background: color-mix(in srgb, var(--groen) 12%, var(--kaart)); }
+.optie.onjuist { border-color: var(--rood); background: color-mix(in srgb, var(--rood) 12%, var(--kaart)); }

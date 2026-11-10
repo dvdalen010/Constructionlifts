@@ -1,6 +1,6 @@
 // Service worker: zorgt dat de app ook offline (op de bouw zonder bereik) werkt.
-const CACHE = 'liftmaat-v1';
-const BESTANDEN = ['./', './index.html', './style.css', './app.js', './manifest.json'];
+const CACHE = 'liftmaat-v2';
+const BESTANDEN = ['./', './index.html', './style.css', './app.js', './manifest.json', './leren.js', './leerstof.json'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(BESTANDEN)));

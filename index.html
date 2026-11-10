@@ -11,19 +11,24 @@
 <body>
 <header>
   <h1>Liftmaat</h1>
-  <p class="sub">Gereedschapskist voor de bouwliftmonteur</p>
+  <p class="sub">Leren en werken als bouwliftmonteur</p>
 </header>
 
 <nav>
-  <button data-tab="anker" class="active">Ankerplan</button>
+  <button data-tab="leren" class="active">Leren</button>
+  <button data-tab="anker">Ankerplan</button>
   <button data-tab="check">Dagcontrole</button>
   <button data-tab="model">Liftmodel</button>
-  <button data-tab="begrip">Begrippen</button>
 </nav>
 
 <main>
+  <!-- LEREN -->
+  <section id="leren" class="tab active">
+    <div id="lerenInhoud"><p class="muted">Leerstof laden...</p></div>
+  </section>
+
   <!-- ANKERPLAN -->
-  <section id="anker" class="tab active">
+  <section id="anker" class="tab">
     <h2>Ankerplan berekenen</h2>
     <p class="muted">Model: <strong id="modelNaam"></strong></p>
     <label>Gewenste masthoogte (m)
@@ -57,34 +62,9 @@
     <button id="resetModel" class="secundair">Standaardwaarden AT50 herstellen</button>
   </section>
 
-  <!-- BEGRIPPEN -->
-  <section id="begrip" class="tab">
-    <h2>Begrippen</h2>
-    <dl class="begrippen">
-      <dt>Vrijstaande hoogte</dt>
-      <dd>De hoogte die de mast zonder enig anker mag hebben, gemeten vanaf het
-        onderframe. Bij de De Jong AT50 is dat 10,5 m volgens de fabrikantfolder.</dd>
-      <dt>Ankerhoogte</dt>
-      <dd>De hoogte waarop een muuranker de mast aan het gebouw of de steiger
-        vastzet. Het eerste anker mag niet hoger zitten dan de handleiding toestaat.</dd>
-      <dt>Ankerafstand</dt>
-      <dd>De maximale verticale afstand tussen twee opeenvolgende ankers
-        (AT50: 6 m bij enkele mast volgens fabrikantgegevens).</dd>
-      <dt>Vrije mastlengte boven laatste anker</dt>
-      <dd>Hoeveel mast er boven het hoogste anker mag uitsteken. Staat als aparte
-        waarde in de handleiding.</dd>
-      <dt>Mastsectie</dt>
-      <dd>Eén los mastdeel. Ankers worden op de mast geplaatst, de masthoogte is
-        dus altijd een veelvoud van de sectielengte.</dd>
-      <dt>Tandheugel</dt>
-      <dd>De getande staaf op de mast waarover het aandrijfrondsel de lift omhoog
-        en omlaag beweegt.</dd>
-      <dt>Vangtoestel</dt>
-      <dd>Veiligheidsrem die de lift blokkeert bij te hoge daalsnelheid.</dd>
-    </dl>
-  </section>
 </main>
 
 <script src="app.js"></script>
+<script src="leren.js"></script>
 </body>
 </html>
