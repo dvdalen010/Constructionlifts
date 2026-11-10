@@ -44,7 +44,7 @@ Zet dat op `"nagekeken"` zodra een ervaren monteur het heeft gecontroleerd.
 
 ## Online
 
-De app staat op **https://dvdalen010.github.io/constructionlifts/**
+De app staat op **https://dvdalen010.github.io/Constructionlifts/**
 
 Op de telefoon: open de link en kies "Zet op beginscherm" (iPhone: deelknop, Android: menu met drie puntjes).
 Daarna werkt de app als een gewone app, ook zonder bereik.
