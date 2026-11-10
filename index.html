@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f2a900">
+<title>Liftmaat</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Liftmaat</h1>
+  <p class="sub">Gereedschapskist voor de bouwliftmonteur</p>
+</header>
+
+<nav>
+  <button data-tab="anker" class="active">Ankerplan</button>
+  <button data-tab="check">Dagcontrole</button>
+  <button data-tab="model">Liftmodel</button>
+  <button data-tab="begrip">Begrippen</button>
+</nav>
+
+<main>
+  <!-- ANKERPLAN -->
+  <section id="anker" class="tab active">
+    <h2>Ankerplan berekenen</h2>
+    <p class="muted">Model: <strong id="modelNaam"></strong></p>
+    <label>Gewenste masthoogte (m)
+      <input type="number" id="hoogte" min="0" step="0.1" value="20" inputmode="decimal">
+    </label>
+    <div id="resultaat"></div>
+    <p class="waarschuwing">Hulpmiddel, geen vervanging van de montagehandleiding.
+      Controleer altijd de ankerposities en -krachten in de handleiding van het
+      specifieke liftmodel.</p>
+  </section>
+
+  <!-- DAGCONTROLE -->
+  <section id="check" class="tab">
+    <h2>Controle vóór gebruik</h2>
+    <p class="muted">Voorbeeldlijst. Pas aan volgens de handleiding.</p>
+    <ul id="checklijst" class="checklist"></ul>
+    <div class="rij">
+      <input type="text" id="nieuwPunt" placeholder="Eigen controlepunt toevoegen">
+      <button id="voegToe">+</button>
+    </div>
+    <p id="checkStatus" class="muted"></p>
+    <button id="resetCheck" class="secundair">Nieuwe controle starten</button>
+  </section>
+
+  <!-- LIFTMODEL -->
+  <section id="model" class="tab">
+    <h2>Gegevens liftmodel</h2>
+    <p class="muted">Waarden met <span class="badge controleren">controleren</span>
+      zijn nog niet uit de handleiding bevestigd. Pas ze aan en zet ze op bevestigd.</p>
+    <form id="modelForm"></form>
+    <button id="resetModel" class="secundair">Standaardwaarden AT50 herstellen</button>
+  </section>
+
+  <!-- BEGRIPPEN -->
+  <section id="begrip" class="tab">
+    <h2>Begrippen</h2>
+    <dl class="begrippen">
+      <dt>Vrijstaande hoogte</dt>
+      <dd>De hoogte die de mast zonder enig anker mag hebben, gemeten vanaf het
+        onderframe. Bij de De Jong AT50 is dat 10,5 m volgens de fabrikantfolder.</dd>
+      <dt>Ankerhoogte</dt>
+      <dd>De hoogte waarop een muuranker de mast aan het gebouw of de steiger
+        vastzet. Het eerste anker mag niet hoger zitten dan de handleiding toestaat.</dd>
+      <dt>Ankerafstand</dt>
+      <dd>De maximale verticale afstand tussen twee opeenvolgende ankers
+        (AT50: 6 m bij enkele mast volgens fabrikantgegevens).</dd>
+      <dt>Vrije mastlengte boven laatste anker</dt>
+      <dd>Hoeveel mast er boven het hoogste anker mag uitsteken. Staat als aparte
+        waarde in de handleiding.</dd>
+      <dt>Mastsectie</dt>
+      <dd>Eén los mastdeel. Ankers worden op de mast geplaatst, de masthoogte is
+        dus altijd een veelvoud van de sectielengte.</dd>
+      <dt>Tandheugel</dt>
+      <dd>De getande staaf op de mast waarover het aandrijfrondsel de lift omhoog
+        en omlaag beweegt.</dd>
+      <dt>Vangtoestel</dt>
+      <dd>Veiligheidsrem die de lift blokkeert bij te hoge daalsnelheid.</dd>
+    </dl>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
