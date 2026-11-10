@@ -22,6 +22,8 @@ leerstof met oefentoetsen, geslaagd alleen met 0 fouten. Later te delen met coll
 - [x] Volgordevragen (stappen in de juiste volgorde)
 - [x] Online op https://dvdalen010.github.io/Constructionlifts/
 - [x] Updates komen automatisch door op de telefoon
+- [x] Gamification: bouwlift groeit mee met je voortgang (elk geslaagd onderdeel = mastsecties en ankers, vlag op de top)
+- [x] Gamification: geslaagd is 90 dagen geldig, daarna "herkeuring nodig" (net als bij een lift)
 
 ---
 
@@ -74,7 +76,10 @@ leerstof met oefentoetsen, geslaagd alleen met 0 fouten. Later te delen met coll
 
 - [ ] Logboek "Mijn ervaring": wat heb ik gedaan, op welke lift, waar
 - [ ] Examengeschiedenis per onderdeel
-- [ ] Groeipad met niveaus (bijv. leerling, monteur, zelfstandig monteur)
+- [ ] Groeipad met niveaus (bijv. leerling, assistent-monteur, monteur, zelfstandig monteur, meester-monteur)
+- [ ] Badges: *Foutloos* (in één keer geslaagd), *Ankerman* (verankering foutloos), *Volhouder* (7 dagen op rij geoefend), *Vakman* (eigen vraag toegevoegd)
+
+**Spelregels gamification**: belonen van grondigheid en foutloos werken, nooit van snelheid. Geen klok, geen punten voor half goed.
 
 **Klaar als**: je zoon kan in de app laten zien wat hij kan en heeft gedaan.
 
@@ -85,6 +90,7 @@ leerstof met oefentoetsen, geslaagd alleen met 0 fouten. Later te delen met coll
 - [ ] **Beslismoment**: werkgever informeren en toestemming vragen
 - [ ] Testen met 1 of 2 collega's
 - [ ] Feedback van collega's verwerken
+- [ ] Teamdoel in plaats van ranglijst (bijv. "als ploeg alle onderdelen geldig")
 - [ ] **Beslismoment**: is inloggen nodig? (bijv. leermeester ziet resultaten, collega's voegen vragen toe)
 - [ ] Zo ja: inlog en gedeelde gegevens bouwen
 

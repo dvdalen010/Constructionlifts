@@ -118,3 +118,21 @@ td, th { padding: 6px 4px; border-bottom: 1px solid var(--rand); text-align: lef
 .volgorde li.juist { color: var(--groen); font-weight: 600; }
 .volgorde li.onjuist { color: var(--rood); font-weight: 600; }
 .optie[hidden], button[hidden] { display: none; }
+/* bouwlift-voortgang */
+.mast-kaart { display: flex; gap: 12px; align-items: flex-end; }
+.mast-svg { width: 120px; flex: 0 0 120px; height: auto; }
+.m-gevel { fill: var(--rand); }
+.m-grond { stroke: var(--muted); stroke-width: 2; }
+.m-voet { fill: var(--muted); }
+.m-sectie { fill: var(--geel); stroke: #1d1d1b; stroke-width: 1.2; }
+.m-verlopen { fill: #f97316; stroke: #1d1d1b; stroke-width: 1.2; }
+.m-leeg { fill: none; stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 3; }
+.m-schoor { stroke: #1d1d1b; stroke-width: 1; }
+.m-anker { stroke: var(--tekst); stroke-width: 2.5; }
+.m-lift { fill: var(--tekst); }
+.m-raam { fill: var(--geel); }
+.m-paal { stroke: var(--tekst); stroke-width: 1.5; }
+.m-vlag { fill: var(--groen); }
+.badge.verlopen { background: #fed7aa; color: #7c2d12; }
+.herkeuring { color: #c2410c; font-weight: 700; margin: 4px 0; }
+.kaart.let-op { border-color: #f97316; }

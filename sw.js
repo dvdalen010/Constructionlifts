@@ -1,7 +1,7 @@
 // Service worker: zorgt dat de app ook offline (op de bouw zonder bereik) werkt.
 // Strategie "eerst netwerk": met bereik altijd de nieuwste versie (en die wordt opgeslagen),
 // zonder bereik de laatst opgeslagen versie. Zo komen updates vanzelf binnen.
-const CACHE = 'liftmaat-v4';
+const CACHE = 'liftmaat-v5';
 const BESTANDEN = ['./', './index.html', './style.css', './app.js', './manifest.json', './leren.js', './leerstof.json'];
 
 self.addEventListener('install', e => {
