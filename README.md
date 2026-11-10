@@ -42,6 +42,13 @@ Zet dat op `"nagekeken"` zodra een ervaren monteur het heeft gecontroleerd.
 
 > Deze app is een hulpmiddel en vervangt nooit de montagehandleiding van de fabrikant of een keuring.
 
+## Online
+
+De app staat op **https://dvdalen010.github.io/constructionlifts/**
+
+Op de telefoon: open de link en kies "Zet op beginscherm" (iPhone: deelknop, Android: menu met drie puntjes).
+Daarna werkt de app als een gewone app, ook zonder bereik.
+
 ## Lokaal starten
 
 ```bash
