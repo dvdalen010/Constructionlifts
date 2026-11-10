@@ -70,6 +70,8 @@ Open daarna http://localhost:8000 in de browser.
 
 ## Ideeën voor later
 
+Zie [PLAN.md](PLAN.md) voor het volledige stappenplan.
+
 - Meerdere liftmodellen (AT75, AT95, PT500)
 - Foto's en PDF-export bij de dagcontrole
 - Projectlogboek per bouwplaats
