@@ -7,19 +7,87 @@
       "intro": "De woorden die je elke dag op de bouw hoort. Ken je deze niet precies, dan begrijp je de handleiding ook niet.",
       "status": "concept",
       "les": [
-        { "kop": "Mast en mastsectie", "tekst": "De mast is de verticale baan waarlangs de lift omhoog en omlaag gaat. Hij bestaat uit losse mastsecties die op elkaar worden gebouwd. De masthoogte is daarom altijd een veelvoud van de sectielengte." },
-        { "kop": "Tandheugel", "tekst": "Op de mast zit een getande staaf: de tandheugel. Het aandrijfrondsel van de lift grijpt hierin en trekt de lift zo omhoog of laat hem omlaag gaan." },
-        { "kop": "Vrijstaande hoogte", "tekst": "De hoogte die de mast mag hebben zonder één enkel anker. Wordt de mast hoger, dan moet er verankerd worden." },
-        { "kop": "Anker en ankerafstand", "tekst": "Een anker zet de mast vast aan het gebouw of de steiger. De ankerafstand is de maximale verticale afstand tussen twee ankers. Daarnaast geeft de handleiding hoe hoog het eerste anker mag zitten en hoeveel mast er boven het laatste anker mag uitsteken." },
-        { "kop": "Vangtoestel", "tekst": "Een veiligheidsrem die de lift blokkeert als hij te snel naar beneden gaat, bijvoorbeeld bij een defect in de aandrijving." },
-        { "kop": "Eindschakelaars", "tekst": "Schakelaars die de lift automatisch stoppen bij het hoogste en laagste punt, zodat hij nooit van de mast af kan rijden of hard op de bodem komt." }
+        {
+          "kop": "Mast en mastsectie",
+          "tekst": "De mast is de verticale baan waarlangs de lift omhoog en omlaag gaat. Hij bestaat uit losse mastsecties die op elkaar worden gebouwd. De masthoogte is daarom altijd een veelvoud van de sectielengte."
+        },
+        {
+          "kop": "Tandheugel",
+          "tekst": "Op de mast zit een getande staaf: de tandheugel. Het aandrijfrondsel van de lift grijpt hierin en trekt de lift zo omhoog of laat hem omlaag gaan."
+        },
+        {
+          "kop": "Vrijstaande hoogte",
+          "tekst": "De hoogte die de mast mag hebben zonder één enkel anker. Wordt de mast hoger, dan moet er verankerd worden."
+        },
+        {
+          "kop": "Anker en ankerafstand",
+          "tekst": "Een anker zet de mast vast aan het gebouw of de steiger. De ankerafstand is de maximale verticale afstand tussen twee ankers. Daarnaast geeft de handleiding hoe hoog het eerste anker mag zitten en hoeveel mast er boven het laatste anker mag uitsteken."
+        },
+        {
+          "kop": "Vangtoestel",
+          "tekst": "Een veiligheidsrem die de lift blokkeert als hij te snel naar beneden gaat, bijvoorbeeld bij een defect in de aandrijving."
+        },
+        {
+          "kop": "Eindschakelaars",
+          "tekst": "Schakelaars die de lift automatisch stoppen bij het hoogste en laagste punt, zodat hij nooit van de mast af kan rijden of hard op de bodem komt."
+        }
       ],
       "vragen": [
-        { "vraag": "Wat is de vrijstaande hoogte van een bouwlift?", "opties": ["De hoogte die de mast zonder ankers mag hebben", "De hoogte van het eerste anker", "De maximale hoogte van de lift met ankers", "De hoogte van het platform boven de grond"], "goed": 0, "uitleg": "Vrijstaand betekent: zonder ankers. Boven die hoogte moet de mast verankerd worden." },
-        { "vraag": "Wat is de ankerafstand?", "opties": ["De maximale verticale afstand tussen twee ankers", "De afstand van de mast tot de gevel", "De lengte van een anker", "De afstand tussen de onderkant en het eerste anker"], "goed": 0, "uitleg": "De ankerafstand is de verticale tussenruimte tussen twee opeenvolgende ankers. De hoogte van het eerste anker is een aparte waarde." },
-        { "vraag": "Waarlangs beweegt de lift omhoog en omlaag?", "opties": ["Langs de tandheugel op de mast, via het aandrijfrondsel", "Aan een staalkabel over een katrol", "Via een hydraulische cilinder", "Langs de ankers"], "goed": 0, "uitleg": "Een tandheugellift trekt zich met een rondsel langs de getande staaf op de mast omhoog." },
-        { "vraag": "Wat doet het vangtoestel?", "opties": ["Het blokkeert de lift als hij te snel naar beneden gaat", "Het vangt vallend materiaal op", "Het zet de mast vast aan de gevel", "Het stopt de lift bij de bovenste stopplaats"], "goed": 0, "uitleg": "Het vangtoestel is de noodrem tegen te hoge daalsnelheid. Het stoppen bij boven- en onderkant doen de eindschakelaars." },
-        { "vraag": "Waarom is de masthoogte altijd een veelvoud van de sectielengte?", "opties": ["Omdat de mast uit losse secties van gelijke lengte wordt opgebouwd", "Omdat de handleiding dat voorschrijft voor de keuring", "Omdat de ankers anders niet passen", "Dat is niet zo, je kunt een sectie inkorten"], "goed": 0, "uitleg": "Mastsecties worden nooit ingekort. Je bouwt altijd met hele secties, dus kom je vaak iets hoger uit dan gewenst." }
+        {
+          "vraag": "Wat is de vrijstaande hoogte van een bouwlift?",
+          "opties": [
+            "De hoogte die de mast zonder ankers mag hebben",
+            "De hoogte van het eerste anker",
+            "De maximale hoogte van de lift met ankers",
+            "De hoogte van het platform boven de grond"
+          ],
+          "goed": 0,
+          "uitleg": "Vrijstaand betekent: zonder ankers. Boven die hoogte moet de mast verankerd worden."
+        },
+        {
+          "vraag": "Wat is de ankerafstand?",
+          "opties": [
+            "De maximale verticale afstand tussen twee ankers",
+            "De afstand van de mast tot de gevel",
+            "De lengte van een anker",
+            "De afstand tussen de onderkant en het eerste anker"
+          ],
+          "goed": 0,
+          "uitleg": "De ankerafstand is de verticale tussenruimte tussen twee opeenvolgende ankers. De hoogte van het eerste anker is een aparte waarde."
+        },
+        {
+          "vraag": "Waarlangs beweegt de lift omhoog en omlaag?",
+          "opties": [
+            "Langs de tandheugel op de mast, via het aandrijfrondsel",
+            "Aan een staalkabel over een katrol",
+            "Via een hydraulische cilinder",
+            "Langs de ankers"
+          ],
+          "goed": 0,
+          "uitleg": "Een tandheugellift trekt zich met een rondsel langs de getande staaf op de mast omhoog."
+        },
+        {
+          "vraag": "Wat doet het vangtoestel?",
+          "opties": [
+            "Het blokkeert de lift als hij te snel naar beneden gaat",
+            "Het vangt vallend materiaal op",
+            "Het zet de mast vast aan de gevel",
+            "Het stopt de lift bij de bovenste stopplaats"
+          ],
+          "goed": 0,
+          "uitleg": "Het vangtoestel is de noodrem tegen te hoge daalsnelheid. Het stoppen bij boven- en onderkant doen de eindschakelaars."
+        },
+        {
+          "vraag": "Waarom is de masthoogte altijd een veelvoud van de sectielengte?",
+          "opties": [
+            "Omdat de mast uit losse secties van gelijke lengte wordt opgebouwd",
+            "Omdat de handleiding dat voorschrijft voor de keuring",
+            "Omdat de ankers anders niet passen",
+            "Dat is niet zo, je kunt een sectie inkorten"
+          ],
+          "goed": 0,
+          "uitleg": "Mastsecties worden nooit ingekort. Je bouwt altijd met hele secties, dus kom je vaak iets hoger uit dan gewenst."
+        }
       ]
     },
     {
@@ -28,18 +96,83 @@
       "intro": "De belangrijkste getallen van de De Jong AT50. Deze moet je uit je hoofd kennen.",
       "status": "concept",
       "les": [
-        { "kop": "Vrijstaande hoogte: 10,5 m", "tekst": "De AT50 mag tot 10,5 m mast zonder ankers staan. Dat is voor deze lift een bijzonder hoge waarde." },
-        { "kop": "Ankerafstand: 6 m", "tekst": "Bij een enkele mast mogen de ankers maximaal 6 m uit elkaar zitten." },
-        { "kop": "Maximale masthoogte: 75 m", "tekst": "Verankerd mag de mast van de AT50 maximaal 75 m hoog worden." },
-        { "kop": "Hefvermogen: 500 kg", "tekst": "De AT50 is een goederenlift met een hefvermogen van 500 kg volgens de fabrikant. Let op: een goederenlift is niet bedoeld voor personenvervoer." },
-        { "kop": "Bron", "tekst": "Fabrikantfolder en verhuurspecificaties van De Jong. Controleer altijd de handleiding van de lift waaraan je werkt: uitvoeringen kunnen verschillen." }
+        {
+          "kop": "Vrijstaande hoogte: 10,5 m",
+          "tekst": "De AT50 mag tot 10,5 m mast zonder ankers staan. Dat is voor deze lift een bijzonder hoge waarde."
+        },
+        {
+          "kop": "Ankerafstand: 6 m",
+          "tekst": "Bij een enkele mast mogen de ankers maximaal 6 m uit elkaar zitten."
+        },
+        {
+          "kop": "Maximale masthoogte: 75 m",
+          "tekst": "Verankerd mag de mast van de AT50 maximaal 75 m hoog worden."
+        },
+        {
+          "kop": "Hefvermogen: 500 kg",
+          "tekst": "De AT50 is een goederenlift met een hefvermogen van 500 kg volgens de fabrikant. Let op: een goederenlift is niet bedoeld voor personenvervoer."
+        },
+        {
+          "kop": "Bron",
+          "tekst": "Fabrikantfolder en verhuurspecificaties van De Jong. Controleer altijd de handleiding van de lift waaraan je werkt: uitvoeringen kunnen verschillen."
+        }
       ],
       "vragen": [
-        { "vraag": "Wat is de vrijstaande hoogte van de De Jong AT50?", "opties": ["10,5 m", "6 m", "9 m", "15 m"], "goed": 0, "uitleg": "De AT50 heeft een vrijstaande hoogte van 10,5 m." },
-        { "vraag": "Wat is de maximale ankerafstand van de AT50 bij een enkele mast?", "opties": ["6 m", "3 m", "9 m", "10,5 m"], "goed": 0, "uitleg": "Maximaal 6 m tussen twee ankers bij een enkele mast." },
-        { "vraag": "Wat is de maximale verankerde masthoogte van de AT50?", "opties": ["75 m", "50 m", "100 m", "150 m"], "goed": 0, "uitleg": "De AT50 mag verankerd maximaal 75 m hoog worden." },
-        { "vraag": "Wat is het hefvermogen van de AT50?", "opties": ["500 kg", "200 kg", "750 kg", "1000 kg"], "goed": 0, "uitleg": "Het hefvermogen is 500 kg. De 50 in de naam helpt je dat te onthouden." },
-        { "vraag": "Een AT50-mast is 9 m hoog. Hoeveel ankers zijn er nodig?", "opties": ["Geen", "1", "2", "3"], "goed": 0, "uitleg": "9 m ligt onder de vrijstaande hoogte van 10,5 m, dus er is geen anker nodig." }
+        {
+          "vraag": "Wat is de vrijstaande hoogte van de De Jong AT50?",
+          "opties": [
+            "10,5 m",
+            "6 m",
+            "9 m",
+            "15 m"
+          ],
+          "goed": 0,
+          "uitleg": "De AT50 heeft een vrijstaande hoogte van 10,5 m."
+        },
+        {
+          "vraag": "Wat is de maximale ankerafstand van de AT50 bij een enkele mast?",
+          "opties": [
+            "6 m",
+            "3 m",
+            "9 m",
+            "10,5 m"
+          ],
+          "goed": 0,
+          "uitleg": "Maximaal 6 m tussen twee ankers bij een enkele mast."
+        },
+        {
+          "vraag": "Wat is de maximale verankerde masthoogte van de AT50?",
+          "opties": [
+            "75 m",
+            "50 m",
+            "100 m",
+            "150 m"
+          ],
+          "goed": 0,
+          "uitleg": "De AT50 mag verankerd maximaal 75 m hoog worden."
+        },
+        {
+          "vraag": "Wat is het hefvermogen van de AT50?",
+          "opties": [
+            "500 kg",
+            "200 kg",
+            "750 kg",
+            "1000 kg"
+          ],
+          "goed": 0,
+          "uitleg": "Het hefvermogen is 500 kg. De 50 in de naam helpt je dat te onthouden."
+        },
+        {
+          "vraag": "Een AT50-mast is 9 m hoog. Hoeveel ankers zijn er nodig?",
+          "opties": [
+            "Geen",
+            "1",
+            "2",
+            "3"
+          ],
+          "goed": 0,
+          "uitleg": "9 m ligt onder de vrijstaande hoogte van 10,5 m, dus er is geen anker nodig."
+        }
       ]
     },
     {
@@ -48,17 +181,221 @@
       "intro": "Oefenen met het bepalen van ankers. Alle gegevens staan in de vraag, net als bij een echte opdracht met de handleiding naast je.",
       "status": "concept",
       "les": [
-        { "kop": "Stap 1: masthoogte bepalen", "tekst": "Deel de gewenste hoogte door de sectielengte en rond altijd naar boven af. Voorbeeld: 20 m gewenst met secties van 1,5 m wordt 14 secties = 21 m." },
-        { "kop": "Stap 2: is verankeren nodig?", "tekst": "Is de masthoogte niet hoger dan de vrijstaande hoogte, dan zijn er geen ankers nodig." },
-        { "kop": "Stap 3: ankers plaatsen", "tekst": "Plaats het eerste anker niet hoger dan toegestaan. Plaats daarna elk volgend anker binnen de ankerafstand. Ga door tot het stuk mast boven het laatste anker niet langer is dan toegestaan." },
-        { "kop": "Altijd de handleiding", "tekst": "De waarden verschillen per liftmodel en per uitvoering. Reken altijd met de getallen uit de handleiding van de lift waaraan je werkt." }
+        {
+          "kop": "Stap 1: masthoogte bepalen",
+          "tekst": "Deel de gewenste hoogte door de sectielengte en rond altijd naar boven af. Voorbeeld: 20 m gewenst met secties van 1,5 m wordt 14 secties = 21 m."
+        },
+        {
+          "kop": "Stap 2: is verankeren nodig?",
+          "tekst": "Is de masthoogte niet hoger dan de vrijstaande hoogte, dan zijn er geen ankers nodig."
+        },
+        {
+          "kop": "Stap 3: ankers plaatsen",
+          "tekst": "Plaats het eerste anker niet hoger dan toegestaan. Plaats daarna elk volgend anker binnen de ankerafstand. Ga door tot het stuk mast boven het laatste anker niet langer is dan toegestaan."
+        },
+        {
+          "kop": "Altijd de handleiding",
+          "tekst": "De waarden verschillen per liftmodel en per uitvoering. Reken altijd met de getallen uit de handleiding van de lift waaraan je werkt."
+        }
       ],
       "vragen": [
-        { "vraag": "Je wilt 20 m mast. Een mastsectie is 1,5 m. Hoeveel secties heb je nodig?", "opties": ["14", "13", "12", "15"], "goed": 0, "uitleg": "20 / 1,5 = 13,33. Altijd naar boven afronden: 14 secties = 21 m." },
-        { "vraag": "Vrijstaande hoogte 10,5 m, masthoogte 10,5 m. Hoeveel ankers?", "opties": ["Geen", "1", "2", "Hangt af van de ankerafstand"], "goed": 0, "uitleg": "Precies gelijk aan de vrijstaande hoogte is nog toegestaan zonder ankers." },
-        { "vraag": "Mast 21 m. Eerste anker op 6 m, ankerafstand 6 m, maximaal 3 m mast boven het laatste anker. Hoeveel ankers?", "opties": ["3", "2", "4", "5"], "goed": 0, "uitleg": "Ankers op 6, 12 en 18 m. Boven 18 m staat nog 3 m mast, dat is precies toegestaan." },
-        { "vraag": "Mast 24 m. Eerste anker op 6 m, ankerafstand 6 m, maximaal 3 m mast boven het laatste anker. Hoeveel ankers?", "opties": ["4", "3", "5", "2"], "goed": 0, "uitleg": "Ankers op 6, 12, 18 en 24 m. Met alleen 3 ankers staat er 6 m mast boven het laatste anker, en dat is te veel." },
-        { "vraag": "Na het verhogen staat er meer mast boven het laatste anker dan de handleiding toestaat. Wat doe je?", "opties": ["Eerst een extra anker plaatsen voordat de lift gebruikt wordt", "Gewoon gebruiken als het niet hard waait", "Alleen lichte lasten vervoeren", "Het melden bij de volgende keuring"], "goed": 0, "uitleg": "Zonder voldoende ankers kan de mast knikken of omvallen. Eerst verankeren, dan pas gebruiken." }
+        {
+          "vraag": "Je wilt 20 m mast. Een mastsectie is 1,5 m. Hoeveel secties heb je nodig?",
+          "opties": [
+            "14",
+            "13",
+            "12",
+            "15"
+          ],
+          "goed": 0,
+          "uitleg": "20 / 1,5 = 13,33. Altijd naar boven afronden: 14 secties = 21 m."
+        },
+        {
+          "vraag": "Vrijstaande hoogte 10,5 m, masthoogte 10,5 m. Hoeveel ankers?",
+          "opties": [
+            "Geen",
+            "1",
+            "2",
+            "Hangt af van de ankerafstand"
+          ],
+          "goed": 0,
+          "uitleg": "Precies gelijk aan de vrijstaande hoogte is nog toegestaan zonder ankers."
+        },
+        {
+          "vraag": "Mast 21 m. Eerste anker op 6 m, ankerafstand 6 m, maximaal 3 m mast boven het laatste anker. Hoeveel ankers?",
+          "opties": [
+            "3",
+            "2",
+            "4",
+            "5"
+          ],
+          "goed": 0,
+          "uitleg": "Ankers op 6, 12 en 18 m. Boven 18 m staat nog 3 m mast, dat is precies toegestaan."
+        },
+        {
+          "vraag": "Mast 24 m. Eerste anker op 6 m, ankerafstand 6 m, maximaal 3 m mast boven het laatste anker. Hoeveel ankers?",
+          "opties": [
+            "4",
+            "3",
+            "5",
+            "2"
+          ],
+          "goed": 0,
+          "uitleg": "Ankers op 6, 12, 18 en 24 m. Met alleen 3 ankers staat er 6 m mast boven het laatste anker, en dat is te veel."
+        },
+        {
+          "vraag": "Na het verhogen staat er meer mast boven het laatste anker dan de handleiding toestaat. Wat doe je?",
+          "opties": [
+            "Eerst een extra anker plaatsen voordat de lift gebruikt wordt",
+            "Gewoon gebruiken als het niet hard waait",
+            "Alleen lichte lasten vervoeren",
+            "Het melden bij de volgende keuring"
+          ],
+          "goed": 0,
+          "uitleg": "Zonder voldoende ankers kan de mast knikken of omvallen. Eerst verankeren, dan pas gebruiken."
+        }
+      ]
+    },
+    {
+      "id": "montage",
+      "titel": "Montage van een bouwlift",
+      "intro": "De stappen van het opbouwen van een tandheugellift, van lege bouwplaats tot een lift die in gebruik mag. Algemene volgorde: de handleiding van het liftmodel is altijd leidend.",
+      "status": "concept",
+      "les": [
+        {
+          "kop": "1. Voorbereiden",
+          "tekst": "Lees de montagehandleiding en bepaal vooraf het ankerplan: hoe hoog wordt de mast, hoeveel secties, waar komen de ankers en kan de gevel of steiger die ankers dragen. Controleer de weersverwachting: voor montage geldt een lagere windgrens dan voor gebruik.",
+          "tab": "anker",
+          "linktekst": "Ankerplan berekenen"
+        },
+        {
+          "kop": "2. Werkgebied afzetten",
+          "tekst": "Zet het gebied rond en onder de mast af. Tijdens de montage kunnen onderdelen, bouten of gereedschap naar beneden vallen."
+        },
+        {
+          "kop": "3. Ondergrond controleren",
+          "tekst": "De ondergrond moet vlak zijn en het gewicht van lift, mast en lading kunnen dragen. Is dat niet zo, dan eerst zorgen voor een draagkrachtige ondergrond volgens de handleiding."
+        },
+        {
+          "kop": "4. Onderframe plaatsen en waterpas stellen",
+          "tekst": "Het onderframe is de basis van alles. Staat het niet waterpas, dan staat de mast scheef en komen er extra krachten op de mast en de ankers."
+        },
+        {
+          "kop": "5. Eerste mastsecties en bodemafscherming",
+          "tekst": "Monteer de eerste mastsecties en stel de mast loodrecht. Plaats de bodemafscherming (hekwerk met deur) rond de lift."
+        },
+        {
+          "kop": "6. Elektrisch aansluiten en controleren",
+          "tekst": "Sluit de lift aan volgens de handleiding en controleer of de lift de goede kant op rijdt voordat je gaat verhogen."
+        },
+        {
+          "kop": "7. Mast verhogen en verankeren",
+          "tekst": "Verhoog de mast sectie voor sectie met de montagebediening. Haal de bouten aan met het voorgeschreven aanhaalmoment (momentsleutel). Plaats een anker zodra de hoogte dat vereist, en altijd voordat je verder verhoogt. Nooit verder bouwen met te veel vrije mast boven het laatste anker."
+        },
+        {
+          "kop": "8. Afwerken boven en bij de stopplaatsen",
+          "tekst": "Monteer de voorzieningen bovenaan (zoals de bovenste eindschakeling volgens de handleiding) en de afscherming bij de laad- en losplaatsen op de verdiepingen."
+        },
+        {
+          "kop": "9. Functietest",
+          "tekst": "Test alle veiligheidsvoorzieningen: eindschakelaars, deurschakelaars, noodstop en wat de handleiding verder voorschrijft."
+        },
+        {
+          "kop": "10. Keuring en oplevering",
+          "tekst": "Na montage wordt de lift gecontroleerd en gekeurd voordat hij in gebruik gaat. Vul het logboek in en geef de gebruikers instructie. Pas daarna mag er mee gewerkt worden."
+        }
+      ],
+      "vragen": [
+        {
+          "type": "volgorde",
+          "vraag": "Zet de hoofdstappen van een montage in de juiste volgorde.",
+          "stappen": [
+            "Ondergrond controleren",
+            "Onderframe plaatsen en waterpas stellen",
+            "Mast opbouwen en verankeren volgens ankerplan",
+            "Functietest van de veiligheidsvoorzieningen",
+            "Keuring en oplevering"
+          ],
+          "uitleg": "Eerst een goede basis, dan de mast met ankers, dan testen, en pas na keuring en oplevering in gebruik."
+        },
+        {
+          "type": "volgorde",
+          "vraag": "Je verhoogt de mast. Zet deze stappen in de juiste volgorde.",
+          "stappen": [
+            "Mastsectie op het platform laden",
+            "Met de montagebediening omhoog rijden",
+            "Sectie plaatsen en bouten aanhalen met het voorgeschreven moment",
+            "Anker plaatsen als de hoogte dat vereist",
+            "Volgende sectie verhogen"
+          ],
+          "uitleg": "Een sectie is pas klaar als de bouten met het juiste moment vastzitten. Is er een anker nodig, dan komt dat altijd voordat je verder verhoogt."
+        },
+        {
+          "vraag": "Waarom moet het onderframe precies waterpas staan?",
+          "opties": [
+            "Anders staat de mast scheef en komen er extra krachten op mast en ankers",
+            "Anders gaan de deuren van de bodemafscherming niet dicht",
+            "Dat is alleen nodig voor de keuring",
+            "Anders past de eerste mastsectie niet"
+          ],
+          "goed": 0,
+          "uitleg": "Een scheve basis betekent een scheve mast. Hoe hoger de mast, hoe groter de extra krachten op mast en ankers."
+        },
+        {
+          "vraag": "Waarmee haal je de bouten van de mastsecties aan?",
+          "opties": [
+            "Met een momentsleutel op het moment uit de handleiding",
+            "Zo vast als je kunt met een ringsleutel",
+            "Met een slagmoersleutel op de hoogste stand",
+            "Handvast, de mast drukt ze verder aan"
+          ],
+          "goed": 0,
+          "uitleg": "Te los en de mast kan gaan bewegen, te vast en de bout kan beschadigen. Het voorgeschreven aanhaalmoment staat in de handleiding."
+        },
+        {
+          "vraag": "Tijdens het verhogen komt er straks meer vrije mast boven het laatste anker dan toegestaan. Wanneer plaats je het volgende anker?",
+          "opties": [
+            "Voordat je verder verhoogt",
+            "Als de mast op zijn eindhoogte staat",
+            "Aan het einde van de werkdag",
+            "Na de functietest"
+          ],
+          "goed": 0,
+          "uitleg": "Je bouwt nooit verder met te veel vrije mast. Eerst het anker, dan pas de volgende sectie."
+        },
+        {
+          "vraag": "Het gaat harder waaien dan de windgrens voor montage. Wat doe je?",
+          "opties": [
+            "Stoppen met de montage tot de wind afneemt",
+            "Doorgaan, de windgrens voor gebruik is hoger",
+            "Alleen nog ankers plaatsen",
+            "Doorgaan als de mast al verankerd is"
+          ],
+          "goed": 0,
+          "uitleg": "Voor montage geldt een lagere windgrens dan voor gebruik. Daarboven stop je met monteren."
+        },
+        {
+          "vraag": "Waarom zet je het gebied onder de mast af tijdens de montage?",
+          "opties": [
+            "Omdat er onderdelen, bouten of gereedschap naar beneden kunnen vallen",
+            "Omdat het verplicht is voor de keuring",
+            "Om de onderdelen netjes bij elkaar te houden",
+            "Zodat niemand de lift alvast gebruikt"
+          ],
+          "goed": 0,
+          "uitleg": "Vallende voorwerpen van hoogte zijn levensgevaarlijk. Niemand hoort onder de montage te staan."
+        },
+        {
+          "vraag": "De mast staat op hoogte en alles is vast. Mag de bouwploeg de lift nu gebruiken?",
+          "opties": [
+            "Nee, eerst functietest, keuring en oplevering",
+            "Ja, als de functietest goed is",
+            "Ja, voor materiaal alvast wel",
+            "Ja, als de montageploeg erbij blijft"
+          ],
+          "goed": 0,
+          "uitleg": "Een lift gaat pas in gebruik na de functietest en de controle of keuring na montage, met instructie aan de gebruikers."
+        }
       ]
     },
     {
@@ -67,16 +404,68 @@
       "intro": "Wat je controleert voordat de lift gebruikt wordt, en wat je doet als iets niet in orde is.",
       "status": "concept",
       "les": [
-        { "kop": "Controle vóór gebruik", "tekst": "Controleer elke werkdag voor gebruik onder andere: ondergrond en onderframe, mast en boutverbindingen, ankers, tandheugel, hekwerk en deuren, deur- en eindschakelaars, noodstop en de voedingskabel." },
-        { "kop": "Niet in orde = niet gebruiken", "tekst": "Werkt een veiligheidsvoorziening niet, dan wordt de lift niet gebruikt. Zet hem buiten gebruik, zorg dat niemand hem per ongeluk gebruikt en meld het." },
-        { "kop": "Wind", "tekst": "Elke lift heeft een maximale windsnelheid voor gebruik en een lagere voor montage. Wordt die overschreden, dan stop je. De waarden staan in de handleiding." },
-        { "kop": "Belasting", "tekst": "Nooit meer laden dan het toegestane hefvermogen. Een goederenlift is niet voor personen." }
+        {
+          "kop": "Controle vóór gebruik",
+          "tekst": "Controleer elke werkdag voor gebruik onder andere: ondergrond en onderframe, mast en boutverbindingen, ankers, tandheugel, hekwerk en deuren, deur- en eindschakelaars, noodstop en de voedingskabel."
+        },
+        {
+          "kop": "Niet in orde = niet gebruiken",
+          "tekst": "Werkt een veiligheidsvoorziening niet, dan wordt de lift niet gebruikt. Zet hem buiten gebruik, zorg dat niemand hem per ongeluk gebruikt en meld het."
+        },
+        {
+          "kop": "Wind",
+          "tekst": "Elke lift heeft een maximale windsnelheid voor gebruik en een lagere voor montage. Wordt die overschreden, dan stop je. De waarden staan in de handleiding."
+        },
+        {
+          "kop": "Belasting",
+          "tekst": "Nooit meer laden dan het toegestane hefvermogen. Een goederenlift is niet voor personen."
+        }
       ],
       "vragen": [
-        { "vraag": "Bij de dagcontrole werkt een eindschakelaar niet. Wat doe je?", "opties": ["Lift buiten gebruik stellen en melden", "Voorzichtig gebruiken en goed opletten", "Alleen gebruiken tot halverwege de mast", "Na de werkdag melden"], "goed": 0, "uitleg": "Een defecte veiligheidsvoorziening betekent: niet gebruiken. Buiten gebruik stellen en melden." },
-        { "vraag": "De wind is harder dan de toegestane grens uit de handleiding. Wat doe je?", "opties": ["Stoppen met gebruik tot de wind afneemt", "Doorwerken met halve lading", "Alleen omlaag rijden met materiaal", "Doorwerken als de mast goed verankerd is"], "goed": 0, "uitleg": "Boven de windgrens stop je. Ook een goed verankerde mast is daar niet op berekend." },
-        { "vraag": "Mag een collega even meerijden op een goederenlift zoals de AT50?", "opties": ["Nee, een goederenlift is niet voor personen", "Ja, als er geen materiaal op staat", "Ja, als hij onder het hefvermogen blijft", "Ja, als de uitvoerder toestemming geeft"], "goed": 0, "uitleg": "Een goederenlift is niet gebouwd en gekeurd voor personenvervoer. Ook niet even." },
-        { "vraag": "Wanneer doe je de controle vóór gebruik?", "opties": ["Elke werkdag voordat de lift gebruikt wordt", "Eén keer per week", "Alleen na montage", "Alleen bij de periodieke keuring"], "goed": 0, "uitleg": "Elke werkdag, voor het eerste gebruik." }
+        {
+          "vraag": "Bij de dagcontrole werkt een eindschakelaar niet. Wat doe je?",
+          "opties": [
+            "Lift buiten gebruik stellen en melden",
+            "Voorzichtig gebruiken en goed opletten",
+            "Alleen gebruiken tot halverwege de mast",
+            "Na de werkdag melden"
+          ],
+          "goed": 0,
+          "uitleg": "Een defecte veiligheidsvoorziening betekent: niet gebruiken. Buiten gebruik stellen en melden."
+        },
+        {
+          "vraag": "De wind is harder dan de toegestane grens uit de handleiding. Wat doe je?",
+          "opties": [
+            "Stoppen met gebruik tot de wind afneemt",
+            "Doorwerken met halve lading",
+            "Alleen omlaag rijden met materiaal",
+            "Doorwerken als de mast goed verankerd is"
+          ],
+          "goed": 0,
+          "uitleg": "Boven de windgrens stop je. Ook een goed verankerde mast is daar niet op berekend."
+        },
+        {
+          "vraag": "Mag een collega even meerijden op een goederenlift zoals de AT50?",
+          "opties": [
+            "Nee, een goederenlift is niet voor personen",
+            "Ja, als er geen materiaal op staat",
+            "Ja, als hij onder het hefvermogen blijft",
+            "Ja, als de uitvoerder toestemming geeft"
+          ],
+          "goed": 0,
+          "uitleg": "Een goederenlift is niet gebouwd en gekeurd voor personenvervoer. Ook niet even."
+        },
+        {
+          "vraag": "Wanneer doe je de controle vóór gebruik?",
+          "opties": [
+            "Elke werkdag voordat de lift gebruikt wordt",
+            "Eén keer per week",
+            "Alleen na montage",
+            "Alleen bij de periodieke keuring"
+          ],
+          "goed": 0,
+          "uitleg": "Elke werkdag, voor het eerste gebruik."
+        }
       ]
     }
   ]

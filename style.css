@@ -113,3 +113,8 @@ td, th { padding: 6px 4px; border-bottom: 1px solid var(--rand); text-align: lef
 .optie.gekozen { border-color: var(--geel); }
 .optie.juist { border-color: var(--groen); background: color-mix(in srgb, var(--groen) 12%, var(--kaart)); }
 .optie.onjuist { border-color: var(--rood); background: color-mix(in srgb, var(--rood) 12%, var(--kaart)); }
+.volgorde { padding-left: 24px; margin: 8px 0 12px; }
+.volgorde li { padding: 6px 0; }
+.volgorde li.juist { color: var(--groen); font-weight: 600; }
+.volgorde li.onjuist { color: var(--rood); font-weight: 600; }
+.optie[hidden], button[hidden] { display: none; }

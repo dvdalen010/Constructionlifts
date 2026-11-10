@@ -26,6 +26,17 @@ Alle leerstof staat in `leerstof.json`. Een vraag ziet er zo uit:
 ```
 
 `goed` is het nummer van het juiste antwoord, tellend vanaf 0. De app schudt de volgorde zelf.
+
+Een **volgordevraag** (stappen in de juiste volgorde zetten) ziet er zo uit. Zet de stappen in de goede volgorde, de app schudt ze:
+
+```json
+{
+  "type": "volgorde",
+  "vraag": "Zet de hoofdstappen van een montage in de juiste volgorde.",
+  "stappen": ["Ondergrond controleren", "Onderframe plaatsen en waterpas stellen", "Mast opbouwen en verankeren"],
+  "uitleg": "Eerst een goede basis, dan de mast."
+}
+```
 Een onderdeel met `"status": "concept"` toont een waarschuwing dat de leerstof nog nagekeken moet worden.
 Zet dat op `"nagekeken"` zodra een ervaren monteur het heeft gecontroleerd.
 
@@ -63,5 +74,4 @@ Open daarna http://localhost:8000 in de browser.
 - Foto's en PDF-export bij de dagcontrole
 - Projectlogboek per bouwplaats
 - Storingsboom en eigen kennisbank
-- Montagestappen als leerstof, gekoppeld aan het ankerplan
 - Toetsresultaten delen met een leermeester

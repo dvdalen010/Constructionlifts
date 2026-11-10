@@ -62,7 +62,12 @@ function toonModule(m) {
       'Conceptversie: deze leerstof moet nog door een ervaren monteur worden nagekeken.'));
   }
   for (const blok of m.les) {
-    lerenEl.append(el('div', { class: 'kaart' }, el('h3', {}, blok.kop), el('p', {}, blok.tekst)));
+    const kaart = el('div', { class: 'kaart' }, el('h3', {}, blok.kop), el('p', {}, blok.tekst));
+    if (blok.tab) {
+      kaart.append(el('button', { class: 'secundair', onclick: () =>
+        document.querySelector(`nav button[data-tab="${blok.tab}"]`).click() }, blok.linktekst || 'Openen'));
+    }
+    lerenEl.append(kaart);
   }
   lerenEl.append(
     el('div', { class: 'knoppen' },
@@ -72,11 +77,11 @@ function toonModule(m) {
 }
 
 // ---------- toets ----------
+// Vraagtypes: meerkeuze (standaard) en "volgorde" (stappen in de juiste volgorde zetten).
 function startToets(m, modus) {
-  const vragen = schud(m.vragen).map(v => {
-    const opties = schud(v.opties.map((tekst, i) => ({ tekst, goed: i === v.goed })));
-    return { ...v, opties };
-  });
+  const vragen = schud(m.vragen).map(v => v.type === 'volgorde'
+    ? { ...v, geschud: schud(v.stappen) }
+    : { ...v, opties: schud(v.opties.map((tekst, i) => ({ tekst, goed: i === v.goed }))) });
   toonVraag({ m, modus, vragen, nr: 0, antwoorden: [] });
 }
 
@@ -89,43 +94,91 @@ function toonVraag(t) {
     el('div', { class: 'balk' }, el('div', { style: `width:${(t.nr / t.vragen.length) * 100}%` })),
     el('h3', { class: 'vraag' }, v.vraag));
 
-  const lijst = el('div', { class: 'opties' });
   const verder = el('button', { class: 'primair', disabled: '' },
     t.nr + 1 < t.vragen.length ? 'Volgende vraag' : 'Uitslag bekijken');
   const feedback = el('div');
-  let gekozen = null;
+  let antwoord = null; // { goed, jouw, juist }
 
-  v.opties.forEach((o, i) => {
-    const knop = el('button', { class: 'optie' }, o.tekst);
-    knop.addEventListener('click', () => {
-      if (t.modus === 'oefenen' && gekozen !== null) return; // antwoord staat vast
-      gekozen = i;
-      lijst.querySelectorAll('.optie').forEach(k => k.classList.remove('gekozen'));
-      knop.classList.add('gekozen');
-      verder.removeAttribute('disabled');
-      if (t.modus === 'oefenen') {
-        lijst.querySelectorAll('.optie').forEach((k, j) => {
-          if (v.opties[j].goed) k.classList.add('juist');
-          else if (j === i) k.classList.add('onjuist');
-        });
-        feedback.replaceChildren(el('div', { class: `kaart ${o.goed ? 'ok' : 'fout'}` },
-          el('strong', {}, o.goed ? 'Goed. ' : 'Fout. '), v.uitleg));
-      }
+  const toonFeedback = () => {
+    if (t.modus !== 'oefenen') return;
+    feedback.replaceChildren(el('div', { class: `kaart ${antwoord.goed ? 'ok' : 'fout'}` },
+      el('strong', {}, antwoord.goed ? 'Goed. ' : 'Fout. '), v.uitleg));
+  };
+
+  if (v.type === 'volgorde') {
+    const gekozen = [];
+    lerenEl.append(el('p', { class: 'muted' }, 'Tik de stappen aan in de juiste volgorde.'));
+    const volgordeEl = el('ol', { class: 'volgorde' });
+    const lijst = el('div', { class: 'opties' });
+    const wis = el('button', { class: 'secundair' }, 'Opnieuw kiezen');
+    const teken = () => {
+      volgordeEl.replaceChildren(...gekozen.map((st, i) => {
+        const li = el('li', {}, st);
+        if (antwoord && t.modus === 'oefenen') li.className = st === v.stappen[i] ? 'juist' : 'onjuist';
+        return li;
+      }));
+      lijst.querySelectorAll('.optie').forEach(k => {
+        k.hidden = gekozen.includes(k.dataset.stap);
+      });
+      wis.hidden = gekozen.length === 0 || (antwoord && t.modus === 'oefenen');
+    };
+    v.geschud.forEach(st => {
+      const knop = el('button', { class: 'optie', 'data-stap': st }, st);
+      knop.addEventListener('click', () => {
+        gekozen.push(st);
+        if (gekozen.length === v.stappen.length) {
+          const goed = gekozen.every((x, i) => x === v.stappen[i]);
+          antwoord = { goed, jouw: gekozen.join(' → '), juist: v.stappen.join(' → ') };
+          verder.removeAttribute('disabled');
+          toonFeedback();
+          if (t.modus === 'oefenen' && !goed) {
+            feedback.firstChild.append(el('ol', { class: 'volgorde' }, ...v.stappen.map(x => el('li', {}, x))));
+          }
+        }
+        teken();
+      });
+      lijst.append(knop);
     });
-    lijst.append(knop);
-  });
+    wis.addEventListener('click', () => {
+      gekozen.length = 0; antwoord = null;
+      verder.setAttribute('disabled', ''); feedback.replaceChildren(); teken();
+    });
+    teken();
+    lerenEl.append(volgordeEl, lijst, wis);
+  } else {
+    const lijst = el('div', { class: 'opties' });
+    v.opties.forEach((o, i) => {
+      const knop = el('button', { class: 'optie' }, o.tekst);
+      knop.addEventListener('click', () => {
+        if (t.modus === 'oefenen' && antwoord) return; // antwoord staat vast
+        antwoord = { goed: o.goed, jouw: o.tekst, juist: v.opties.find(x => x.goed).tekst };
+        lijst.querySelectorAll('.optie').forEach(k => k.classList.remove('gekozen'));
+        knop.classList.add('gekozen');
+        verder.removeAttribute('disabled');
+        if (t.modus === 'oefenen') {
+          lijst.querySelectorAll('.optie').forEach((k, j) => {
+            if (v.opties[j].goed) k.classList.add('juist');
+            else if (j === i) k.classList.add('onjuist');
+          });
+        }
+        toonFeedback();
+      });
+      lijst.append(knop);
+    });
+    lerenEl.append(lijst);
+  }
 
   verder.addEventListener('click', () => {
-    t.antwoorden.push({ vraag: v, gekozen: v.opties[gekozen] });
+    t.antwoorden.push({ vraag: v, ...antwoord });
     if (t.nr + 1 < t.vragen.length) toonVraag({ ...t, nr: t.nr + 1 });
     else toonUitslag(t);
   });
 
-  lerenEl.append(lijst, feedback, verder);
+  lerenEl.append(feedback, verder);
 }
 
 function toonUitslag(t) {
-  const fouten = t.antwoorden.filter(a => !a.gekozen.goed);
+  const fouten = t.antwoorden.filter(a => !a.goed);
   const geslaagd = fouten.length === 0;
 
   if (t.modus === 'examen') {
@@ -147,11 +200,10 @@ function toonUitslag(t) {
         : 'Bij dit werk telt elke fout. Lees de uitleg hieronder en probeer het opnieuw.')));
 
   for (const a of fouten) {
-    const juist = a.vraag.opties.find(o => o.goed).tekst;
     lerenEl.append(el('div', { class: 'kaart fout' },
       el('strong', {}, a.vraag.vraag),
-      el('p', {}, `Jouw antwoord: ${a.gekozen.tekst}`),
-      el('p', {}, `Juiste antwoord: ${juist}`),
+      el('p', {}, `Jouw antwoord: ${a.jouw}`),
+      el('p', {}, `Juiste antwoord: ${a.juist}`),
       el('p', { class: 'muted' }, a.vraag.uitleg)));
   }
 
